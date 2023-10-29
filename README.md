@@ -1,6 +1,6 @@
 # Jodis
 
-I am a developer with a keen interest in technological innovation. Currently, I am working on a network parsing project aimed at developing an advanced options menu for the game Transformice.
+I am a developer with a keen interest in technological innovation.
 
 ## Languages  
 
@@ -12,7 +12,6 @@ I am a developer with a keen interest in technological innovation. Currently, I 
     <img src="https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white"/>
     <img src="https://img.shields.io/badge/CSS-239120?style=for-the-badge&logo=css3&logoColor=white"/>
     <img src="https://img.shields.io/badge/ActionScript-239120?style=for-the-badge&logo=adobe&logoColor=white"/>
-    <img src="https://img.shields.io/badge/SQL-239120?style=for-the-badge&logo=sql&logoColor=white"/>
 </div>
 
 ## Currently Learning
