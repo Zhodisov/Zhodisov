@@ -30,3 +30,6 @@ I am a developer with a keen interest in technological innovation.
 - Go
 
 For discussions, please feel free to contact me on [Discord](https://discord.gg/ZcNrTqvHPN). 
+![Jodis974's Stats](https://github-readme-stats.vercel.app/api?username=Jodis974&theme=vue-dark&show_icons=true&hide_border=true&count_private=true)
+![Jodis974's Streak](https://github-readme-streak-stats.herokuapp.com/?user=Jodis974&theme=vue-dark&hide_border=true)
+![Jodis974's Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Jodis974&theme=vue-dark&show_icons=true&hide_border=true&layout=compact)
