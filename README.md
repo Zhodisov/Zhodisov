@@ -1,7 +1,3 @@
-## About Me
-
-Hello! I'm Jodis, a passionate 19-year-old student in Computer Science and Networks. I'm skilled in several programming languages and currently expanding my knowledge in more.
-
 # Stats
 
 ![stats](https://github-readme-stats.vercel.app/api?username=Jodis974&show_icons=true&theme=radical)
