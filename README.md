@@ -39,7 +39,7 @@ Languages:
 
 Frameworks:
 <br/>
-<img src="https://skillicons.dev/icons?i=bootstrap,nodejs,express,flask,nextjs,fastapi,flask" />
+<img src="https://skillicons.dev/icons?i=bootstrap,nodejs,express,flask,fastapi" />
 <br/>
 
 Databases:
