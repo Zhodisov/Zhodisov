@@ -1,17 +1,17 @@
 
 <h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Grey+Qo&weight=900&size=35&pause=1000&color=F71113&background=14FFF500&center=true&vCenter=true&random=true&width=435&lines=%D0%9B%D0%B0-%D0%9C%D1%83%D0%BA%D0%B0%D1%82%D0%B5!;%D0%94%D0%BE%D0%B1%D1%80%D0%BE+%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C!;SafeMarket.xyz!;%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D0%B8+%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%B5!" alt="Safemarket" /></a>
+    <img src="https://readme-typing-svg.herokuapp.com?font=Grey+Qo&weight=900&size=35&pause=1000&color=F71113&background=14FFF500&center=true&vCenter=true&random=true&width=435&lines=%D0%9B%D0%B0-%D0%9C%D1%83%D0%BA%D0%B0%D1%82%D0%B5!;%D0%94%D0%BE%D0%B1%D1%80%D0%BE+%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C!;safemarket.lol!;%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D0%B8+%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%B5!" alt="Safemarket" /></a>
 </h1>
 <br/>
 
 ## 💫 About Me:
-🔭 I'm currently working on SafeMarket.<br>🌱 I'm currently learning Go, Ruby, Kotlin, Perl.<br> 💬 Visit **[SafeMarket](https://safemarket.xyz/)**.
+🔭 I'm currently working on SafeMarket.<br>🌱 I'm currently learning Go, Ruby, Kotlin, Perl.<br> 💬 Visit **[SafeMarket](https://safemarket.lol/)**.
 
 
 ## 🌐 Socials:
 [![YOUTUBE](https://img.shields.io/badge/Youtube-fc0000?style=for-the-badge&logo=YOUTUBE&logoColor=white)](https://www.youtube.com/@Jodis974)
-[![Discord](https://img.shields.io/badge/Discord-6a85b9?style=for-the-badge&logo=discord&logoColor=white)](https://safemarket.xyz/discord)
- [![Safemarket Email](https://img.shields.io/badge/safemarket_email-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:support-checkout@safemarket.xyz) [![Safemarket.xyz](https://img.shields.io/badge/Safemarket.xyz-0077B5?style=for-the-badge&logo=internet&logoColor=white)](https://safemarket.xyz/) 
+[![Discord](https://img.shields.io/badge/Discord-6a85b9?style=for-the-badge&logo=discord&logoColor=white)](https://safemarket.lol/discord)
+ [![Safemarket Email](https://img.shields.io/badge/safemarket_email-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:support-checkout@safemarket.lol) [![safemarket.lol](https://img.shields.io/badge/safemarket.lol-0077B5?style=for-the-badge&logo=internet&logoColor=white)](https://safemarket.lol/) 
  
 
 
