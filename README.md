@@ -35,9 +35,3 @@
   <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Pourquoiiiiiiiii/Pourquoiiiiiiiii/output/github-contribution-grid-snake.svg" />
   
   <br/><br/><br/>
-
-
----
-
-  ## 💰 You can help me by Donating
-  [![PayPal](https://img.shields.io/badge/PayPal-00457C?style=for-the-badge&logo=paypal&logoColor=white)](https://paypal.me/safemarketFR) 
