@@ -7,9 +7,6 @@
   <img src="https://profile-counter.glitch.me/XiaomingX/count.svg" alt="Visitor's Count" />
 </div>
 <br/><br/>
-## 💫 About Me:
-🔭 I'm currently working on SafeMarket.<br>🌱 I'm currently learning Go, Ruby, Kotlin, Perl.<br> 💬 Visit **[SafeMarket](https://safemarket.xyz/)**.
-
 
 ## 🌐 Socials:
 [![YOUTUBE](https://img.shields.io/badge/Youtube-fc0000?style=for-the-badge&logo=YOUTUBE&logoColor=white)](https://www.youtube.com/@Jodis974)
