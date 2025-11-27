@@ -1,6 +1,7 @@
 <br/><br/>
 <div align="center"> 
-  <img src="https://counter.kuber.studio/Zhodisov/hacker/count.svg" alt="Visitor's Count" />
+  <img src="https://counter.kuber.studio/Zhodisov/dark/count.svg" alt="Profile views" />
+
 </div>
 <br/><br/>
 
