@@ -1,45 +1,149 @@
-<br/><br/>
-<div align="center"> 
-  <img src="https://counter.kuber.studio/Zhodisov/dark/count.svg" alt="Profile views" />
+<div align="center">
+
+<img src="./assets/header.svg" alt="Zhodisov · Reverse Engineering · Full-Stack · Automation" width="100%" />
+
+<br/>
+<br/>
+
+<img src="https://counter.kuber.studio/Zhodisov/dark/count.svg" alt="Profile views" />
 
 </div>
-<br/><br/>
+
+<br/>
 
 <div align="center">
-  
-[![Discord](https://img.shields.io/badge/Discord-6a85b9?style=for-the-badge&logo=discord&logoColor=white)](https://safemarket.xyz/discord)
-[![Safemarket Email](https://img.shields.io/badge/safemarket_email-333333?style=for-the-badge&logo=gmail&logoColor=red)](mailto:support-checkout@safemarket.xyz)
-[![safemarket.xyz](https://img.shields.io/badge/safemarket.xyz-0077B5?style=for-the-badge&logo=internet&logoColor=white)](https://safemarket.xyz/)
+
+I take software apart to see how it works, then build things that last.
+<br/>
+Reverse engineering, full-stack products, and the automation in between.
 
 </div>
 
+<br/>
 
+<table align="center" width="100%">
+<tr>
+<td width="33%" valign="top" align="center">
 
+### Reverse Engineering
 
+Understanding how closed systems really work.
 
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com?font=Grey+Qo&weight=900&size=35&pause=1000&color=F71113&background=14FFF500&center=true&vCenter=true&random=true&width=435&lines=%D0%9B%D0%B0-%D0%9C%D1%83%D0%BA%D0%B0%D1%82%D0%B5!;%D0%94%D0%BE%D0%B1%D1%80%D0%BE+%D0%BF%D0%BE%D0%B6%D0%B0%D0%BB%D0%BE%D0%B2%D0%B0%D1%82%D1%8C!;safemarket.xyz!;%D0%91%D0%B5%D0%B7%D0%BE%D0%BF%D0%B0%D1%81%D0%BD%D0%BE%D1%81%D1%82%D1%8C+%D0%B8+%D0%B4%D0%BE%D0%B2%D0%B5%D1%80%D0%B8%D0%B5!" alt="Safemarket" /></a>
-</h1>
+</td>
+<td width="33%" valign="top" align="center">
 
+### Full-Stack
 
- 
+Web apps built end to end, from interface to database.
 
+</td>
+<td width="33%" valign="top" align="center">
 
-# 💻 Tech Stack:
-![C](https://img.shields.io/badge/c-%2300599C.svg?style=for-the-badge&logo=c&logoColor=white) ![C#](https://img.shields.io/badge/c%23-%23239120.svg?style=for-the-badge&logo=csharp&logoColor=white) ![C++](https://img.shields.io/badge/c++-%2300599C.svg?style=for-the-badge&logo=c%2B%2B&logoColor=white) ![Kotlin](https://img.shields.io/badge/kotlin-%237F52FF.svg?style=for-the-badge&logo=kotlin&logoColor=white) ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54) ![Lua](https://img.shields.io/badge/lua-%232C2D72.svg?style=for-the-badge&logo=lua&logoColor=white) ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white) ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white) ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=openjdk&logoColor=white) ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
-![Go](https://img.shields.io/badge/go-%2300ADD8.svg?style=for-the-badge&logo=go&logoColor=white) ![Electron.js](https://img.shields.io/badge/Electron-191970?style=for-the-badge&logo=Electron&logoColor=white) 
-![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white) 
-![MySQL](https://img.shields.io/badge/mysql-4479A1.svg?style=for-the-badge&logo=mysql&logoColor=white) ![Postgres](https://img.shields.io/badge/postgres-%23316192.svg?style=for-the-badge&logo=postgresql&logoColor=white) ![MariaDB](https://img.shields.io/badge/MariaDB-003545?style=for-the-badge&logo=mariadb&logoColor=white) ![SQLite](https://img.shields.io/badge/sqlite-%2307405e.svg?style=for-the-badge&logo=sqlite&logoColor=white)  ![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white) ![Adobe](https://img.shields.io/badge/adobe-%23FF0000.svg?style=for-the-badge&logo=adobe&logoColor=white) ![Adobe After Effects](https://img.shields.io/badge/Adobe%20After%20Effects-9999FF.svg?style=for-the-badge&logo=Adobe%20After%20Effects&logoColor=white) ![Adobe Fonts](https://img.shields.io/badge/Adobe%20Fonts-000B1D.svg?style=for-the-badge&logo=Adobe%20Fonts&logoColor=white) ![Adobe XD](https://img.shields.io/badge/Adobe%20XD-470137?style=for-the-badge&logo=Adobe%20XD&logoColor=#FF61F6) ![Adobe Premiere Pro](https://img.shields.io/badge/Adobe%20Premiere%20Pro-9999FF.svg?style=for-the-badge&logo=Adobe%20Premiere%20Pro&logoColor=white) ![Adobe Photoshop](https://img.shields.io/badge/adobe%20photoshop-%2331A8FF.svg?style=for-the-badge&logo=adobe%20photoshop&logoColor=white) ![Blender](https://img.shields.io/badge/blender-%23F5792A.svg?style=for-the-badge&logo=blender&logoColor=white) ![Canva](https://img.shields.io/badge/Canva-%2300C4CC.svg?style=for-the-badge&logo=Canva&logoColor=white) ![Figma](https://img.shields.io/badge/figma-%23F24E1E.svg?style=for-the-badge&logo=figma&logoColor=white) ![CMake](https://img.shields.io/badge/CMake-%23008FBA.svg?style=for-the-badge&logo=cmake&logoColor=white) ![Cisco](https://img.shields.io/badge/cisco-%23049fd9.svg?style=for-the-badge&logo=cisco&logoColor=black) ![Arduino](https://img.shields.io/badge/-Arduino-00979D?style=for-the-badge&logo=Arduino&logoColor=white) ![Docker](https://img.shields.io/badge/docker-%230db7ed.svg?style=for-the-badge&logo=docker&logoColor=white) ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white) ![Twilio](https://img.shields.io/badge/Twilio-F22F46?style=for-the-badge&logo=Twilio&logoColor=white) ![Trello](https://img.shields.io/badge/Trello-%23026AA7.svg?style=for-the-badge&logo=Trello&logoColor=white)  ![Wireguard](https://img.shields.io/badge/wireguard-%2388171A.svg?style=for-the-badge&logo=wireguard&logoColor=white) 
-# 📊 GitHub Stats:
-![](https://github-readme-stats.vercel.app/api/top-langs/?username=Zhodisov&theme=tokyonight&hide_border=false&include_all_commits=true&count_private=true&layout=compact)
+### Automation
 
-## 🏆 GitHub Trophies
-![](https://github-profile-trophy.vercel.app/?username=Zhodisov&theme=tokyonight&no-frame=false&no-bg=false&margin-w=4)
+Services, bots and pipelines that run on their own.
 
-### 🔝 Top Contributed Repo
-![](https://github-contributor-stats.vercel.app/api?username=Zhodisov&limit=5&theme=dark&combine_all_yearly_contributions=true)
+</td>
+</tr>
+</table>
 
- 
-  <img alt="snake eating my contributions" src="https://raw.githubusercontent.com/Pourquoiiiiiiiii/Pourquoiiiiiiiii/output/github-contribution-grid-snake.svg" />
-  
-  <br/><br/><br/>
+<br/>
+
+<div align="center">
+
+### Toolbox
+
+</div>
+
+<table align="center">
+<tr>
+<td align="right" width="150"><b>Languages</b></td>
+<td>
+<img src="https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white" alt="TypeScript"/>
+<img src="https://img.shields.io/badge/Python-3670A0?style=flat-square&logo=python&logoColor=white" alt="Python"/>
+<img src="https://img.shields.io/badge/Rust-E43717?style=flat-square&logo=rust&logoColor=white" alt="Rust"/>
+<img src="https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white" alt="C++"/>
+<img src="https://img.shields.io/badge/C%23-512BD4?style=flat-square&logo=csharp&logoColor=white" alt="C#"/>
+<img src="https://img.shields.io/badge/Go-00ADD8?style=flat-square&logo=go&logoColor=white" alt="Go"/>
+<img src="https://img.shields.io/badge/Kotlin-7F52FF?style=flat-square&logo=kotlin&logoColor=white" alt="Kotlin"/>
+<img src="https://img.shields.io/badge/Lua-2C2D72?style=flat-square&logo=lua&logoColor=white" alt="Lua"/>
+<img src="https://img.shields.io/badge/ActionScript-C8202B?style=flat-square&logoColor=white" alt="ActionScript"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Web&nbsp;&amp;&nbsp;Apps</b></td>
+<td>
+<img src="https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white" alt="Next.js"/>
+<img src="https://img.shields.io/badge/React-20232A?style=flat-square&logo=react&logoColor=61DAFB" alt="React"/>
+<img src="https://img.shields.io/badge/Node.js-5FA04E?style=flat-square&logo=nodedotjs&logoColor=white" alt="Node.js"/>
+<img src="https://img.shields.io/badge/Tailwind-0B1120?style=flat-square&logo=tailwindcss&logoColor=38BDF8" alt="Tailwind CSS"/>
+<img src="https://img.shields.io/badge/Vite-1A1A2E?style=flat-square&logo=vite&logoColor=FFD62E" alt="Vite"/>
+<img src="https://img.shields.io/badge/Stripe-635BFF?style=flat-square&logo=stripe&logoColor=white" alt="Stripe"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Data&nbsp;&amp;&nbsp;Infra</b></td>
+<td>
+<img src="https://img.shields.io/badge/PostgreSQL-316192?style=flat-square&logo=postgresql&logoColor=white" alt="PostgreSQL"/>
+<img src="https://img.shields.io/badge/Drizzle-C5F74F?style=flat-square&logo=drizzle&logoColor=black" alt="Drizzle ORM"/>
+<img src="https://img.shields.io/badge/SQLite-07405e?style=flat-square&logo=sqlite&logoColor=white" alt="SQLite"/>
+<img src="https://img.shields.io/badge/Turso-4FF8D2?style=flat-square&logo=turso&logoColor=black" alt="Turso"/>
+<img src="https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white" alt="Redis"/>
+<img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white" alt="Docker"/>
+<img src="https://img.shields.io/badge/Caddy-1F88C0?style=flat-square&logo=caddy&logoColor=white" alt="Caddy"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Reverse&nbsp;Eng.</b></td>
+<td>
+<img src="https://img.shields.io/badge/Ghidra-FF6B35?style=flat-square&logoColor=white" alt="Ghidra"/>
+<img src="https://img.shields.io/badge/IDA%20Pro-1E1E1E?style=flat-square&logoColor=white" alt="IDA Pro"/>
+<img src="https://img.shields.io/badge/Frida-E63946?style=flat-square&logoColor=white" alt="Frida"/>
+<img src="https://img.shields.io/badge/x64dbg-2B2B2B?style=flat-square&logoColor=white" alt="x64dbg"/>
+<img src="https://img.shields.io/badge/Cheat%20Engine-B01030?style=flat-square&logoColor=white" alt="Cheat Engine"/>
+<img src="https://img.shields.io/badge/Wireshark-1679A7?style=flat-square&logo=wireshark&logoColor=white" alt="Wireshark"/>
+<img src="https://img.shields.io/badge/Burp%20Suite-FF6633?style=flat-square&logo=burpsuite&logoColor=white" alt="Burp Suite"/>
+<img src="https://img.shields.io/badge/Fiddler-1E5B97?style=flat-square&logoColor=white" alt="Fiddler"/>
+</td>
+</tr>
+<tr>
+<td align="right"><b>Tooling</b></td>
+<td>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white" alt="Git"/>
+<img src="https://img.shields.io/badge/Linux-1A1A1A?style=flat-square&logo=linux&logoColor=white" alt="Linux"/>
+<img src="https://img.shields.io/badge/VS%20Code-0A66C2?style=flat-square&logo=visualstudiocode&logoColor=white" alt="VS Code"/>
+<img src="https://img.shields.io/badge/Visual%20Studio-5C2D91?style=flat-square&logo=visualstudio&logoColor=white" alt="Visual Studio"/>
+<img src="https://img.shields.io/badge/pnpm-2B2B2B?style=flat-square&logo=pnpm&logoColor=F69220" alt="pnpm"/>
+<img src="https://img.shields.io/badge/esbuild-1A1A1A?style=flat-square&logo=esbuild&logoColor=FFCF00" alt="esbuild"/>
+<img src="https://img.shields.io/badge/Postman-FF6C37?style=flat-square&logo=postman&logoColor=white" alt="Postman"/>
+<img src="https://img.shields.io/badge/GitHub%20Actions-2088FF?style=flat-square&logo=githubactions&logoColor=white" alt="GitHub Actions"/>
+</td>
+</tr>
+</table>
+
+<br/>
+
+<div align="center">
+
+### Activity
+
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=Zhodisov&show_icons=true&hide_border=true&count_private=true&include_all_commits=true&bg_color=0B0E14&title_color=FF6B35&icon_color=64D2FF&text_color=9FB0C8&hide=contribs" alt="GitHub stats"/>
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Zhodisov&layout=compact&hide_border=true&count_private=true&langs_count=8&bg_color=0B0E14&title_color=FF6B35&text_color=9FB0C8&exclude_repo=GCam-cracked,SecLists,test,de-pixelate_gaV-O6NPWrI" alt="Top languages"/>
+
+</div>
+
+<br/>
+
+<div align="center">
+  <img alt="Contribution snake" src="https://raw.githubusercontent.com/Zhodisov/Zhodisov/output/snake-dark.svg" />
+</div>
+
+<br/>
+
+<div align="center">
+
+<a href="https://discord.com/users/554278644428570645">
+<img src="https://img.shields.io/badge/Discord-5865F2?style=flat-square&logo=discord&logoColor=white" alt="Discord" />
+</a>
+
+</div>
