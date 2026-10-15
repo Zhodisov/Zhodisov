@@ -116,7 +116,7 @@ Reverse engineering, full-stack products, and the automation in between.
 <br/>
 
 <div align="center">
-  <img alt="Contribution snake" src="https://raw.githubusercontent.com/Zhodisov/Zhodisov/output/snake-dark.svg" />
+  <img alt="GitHub streak" src="https://streak-stats.demolab.com/?user=Zhodisov&hide_border=true&background=0B0E14&stroke=1B2436&ring=FF6B35&fire=FF6B35&currStreakNum=E6EDF3&sideNums=9FB0C8&currStreakLabel=FF6B35&sideLabels=9FB0C8&dates=5A6B85&excludeDaysLabel=394A66" />
 </div>
 
 <br/>
