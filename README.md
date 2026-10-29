@@ -112,6 +112,10 @@ Reverse engineering, full-stack products, and the automation in between.
 
 <a href="https://lushvae.xyz"><img src="./assets/generated/projects.svg" alt="Projects: Lushvae.xyz and top repositories by commits" width="100%" /></a>
 
+<br/><br/>
+
+<a href="https://github.com/Zhodisov?tab=repositories&type=source"><img src="./assets/generated/public.svg" alt="Public repositories" width="100%" /></a>
+
 </div>
 
 <br/>
