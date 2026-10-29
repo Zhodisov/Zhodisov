@@ -34,7 +34,7 @@ jobs:
           GH_USER: ${{ github.repository_owner }}
           OUT_DIR: assets/generated
           EXCLUDE_REPOS: GCam-cracked,SecLists,test,de-pixelate_gaV-O6NPWrI
-          HIDE_PROJECTS: NEW-SAFEMARKET-JSON,SafeMarket-Update,DisneyClient-Menu,SafeMarket-Server,profile-readme-test
+          HIDE_PROJECTS: NEW-SAFEMARKET-JSON,SafeMarket-Update,DisneyClient-Menu,SafeMarket-Server,profile-readme-test,SAFEMARKETV2-ENDPOINTDISCORD,PUBLIC,dbs,db,DisneyClient-Parser
           PROJECTS_COUNT: 14
 
       - name: Commit if changed
