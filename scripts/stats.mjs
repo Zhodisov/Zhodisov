@@ -8,6 +8,8 @@ const USER = process.env.GH_USER || "Zhodisov";
 const OUT = process.env.OUT_DIR || "dist";
 const list = (v) => new Set((v || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean));
 const EXCLUDE = list(process.env.EXCLUDE_REPOS);
+// Repos kept in the stats but not listed in the projects table.
+const HIDE = list(process.env.HIDE_PROJECTS);
 if (!TOKEN) throw new Error("STATS_TOKEN or GITHUB_TOKEN required");
 
 // Featured project: shown on top of the projects card, commits summed over its repos.
@@ -305,9 +307,9 @@ const featured = {
   pushedAt: featuredRepos.map((r) => r.pushedAt).sort().pop() || new Date().toISOString(),
 };
 const topRepos = own
-  .filter((r) => !featuredSet.has(r.name.toLowerCase()) && r.name.toLowerCase() !== USER.toLowerCase() && r.commits > 0)
+  .filter((r) => !featuredSet.has(r.name.toLowerCase()) && !HIDE.has(r.name.toLowerCase()) && r.name.toLowerCase() !== USER.toLowerCase() && r.commits > 0)
   .sort((a, b) => b.commits - a.commits)
-  .slice(0, 8);
+  .slice(0, Number(process.env.PROJECTS_COUNT) || 8);
 
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/activity.svg`, activityCard(stats));
