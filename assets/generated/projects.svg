@@ -1,5 +1,5 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="686" viewBox="0 0 1000 686" fill="none" role="img" aria-label="Projects: Lushvae.xyz and top repositories by commits">
-  <rect x="0.5" y="0.5" width="999" height="685" rx="12" fill="#0B0E14" stroke="#1B2436"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="622" viewBox="0 0 1000 622" fill="none" role="img" aria-label="Projects: Lushvae.xyz and top repositories by commits">
+  <rect x="0.5" y="0.5" width="999" height="621" rx="12" fill="#0B0E14" stroke="#1B2436"/>
 <text x="32" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#5A6B85" font-weight="400" letter-spacing="2.5">PROJECTS</text>
   <rect x="32" y="68" width="936" height="92" rx="8" fill="#131A26" stroke="#1B2436"/>
   <g transform="translate(52 88) scale(0.52)"><path d="M50 4C80 20 95 50 81 76C70 95 38 99 22 84C6 69 10 38 50 4Z" fill="#F4F4F5"/>
@@ -98,47 +98,29 @@
   <text x="870" y="491" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">26</text>
   <text x="968" y="491" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Mar 2025</text>
   <line x1="32" y1="502" x2="968" y2="502" stroke="#131A26"/>
-  <text x="32" y="523" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Discord-IPGrabber</text>
-  <text x="400" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#64D2FF" font-weight="400">public</text>
+  <text x="32" y="523" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Instagram</text>
+  <text x="400" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400">private</text>
   <circle cx="504" cy="519" r="4" fill="#3572A5"/>
   <text x="514" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="516" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="516" width="4.7" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">26</text>
+  <rect x="640" y="516" width="4.0" height="5" rx="2.5" fill="#FF6B35"/>
+  <text x="870" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">22</text>
   <text x="968" y="523" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Jun 2025</text>
   <line x1="32" y1="534" x2="968" y2="534" stroke="#131A26"/>
-  <text x="32" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">portfoliotheo</text>
-  <text x="400" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400">private</text>
-  <circle cx="504" cy="551" r="4" fill="#e34c26"/>
-  <text x="514" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">HTML</text>
+  <text x="32" y="555" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">ressources</text>
+  <text x="400" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#64D2FF" font-weight="400">public</text>
+  <text x="500" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#394A66" font-weight="400">—</text>
   <rect x="640" y="548" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="548" width="4.5" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">25</text>
-  <text x="968" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Aug 2024</text>
+  <rect x="640" y="548" width="3.8" height="5" rx="2.5" fill="#FF6B35"/>
+  <text x="870" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">21</text>
+  <text x="968" y="555" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Mar 2025</text>
   <line x1="32" y1="566" x2="968" y2="566" stroke="#131A26"/>
-  <text x="32" y="587" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Instagram</text>
-  <text x="400" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400">private</text>
+  <text x="32" y="587" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Transformice-Discord-Rich-Presence</text>
+  <text x="400" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#64D2FF" font-weight="400">public</text>
   <circle cx="504" cy="583" r="4" fill="#3572A5"/>
   <text x="514" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="580" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="580" width="4.0" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">22</text>
-  <text x="968" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Jun 2025</text>
-  <line x1="32" y1="598" x2="968" y2="598" stroke="#131A26"/>
-  <text x="32" y="619" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">ressources</text>
-  <text x="400" y="619" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#64D2FF" font-weight="400">public</text>
-  <text x="500" y="619" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#394A66" font-weight="400">—</text>
-  <rect x="640" y="612" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="612" width="3.8" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="619" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">21</text>
-  <text x="968" y="619" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Mar 2025</text>
-  <line x1="32" y1="630" x2="968" y2="630" stroke="#131A26"/>
-  <text x="32" y="651" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Transformice-Discord-Rich-Presence</text>
-  <text x="400" y="651" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#64D2FF" font-weight="400">public</text>
-  <circle cx="504" cy="647" r="4" fill="#3572A5"/>
-  <text x="514" y="651" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
-  <rect x="640" y="644" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="644" width="3.6" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="651" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">20</text>
-  <text x="968" y="651" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Apr 2026</text>
+  <rect x="640" y="580" width="3.6" height="5" rx="2.5" fill="#FF6B35"/>
+  <text x="870" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">20</text>
+  <text x="968" y="587" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Apr 2026</text>
 </svg>
