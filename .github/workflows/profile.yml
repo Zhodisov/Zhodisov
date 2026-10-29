@@ -16,6 +16,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     timeout-minutes: 10
+    env:
+      STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
     steps:
       - uses: actions/checkout@v4
 
@@ -23,13 +25,12 @@ jobs:
         with:
           node-version: 20
 
-      # STATS_TOKEN (fine-grained PAT, read-only) includes private repos and languages.
-      # Without it, GITHUB_TOKEN only sees public data.
+      # STATS_TOKEN (classic PAT, read-only scopes) is needed to count private repos and
+      # languages; without it the step is skipped so the committed cards are not downgraded.
       - name: Generate stat cards
+        if: env.STATS_TOKEN != ''
         run: node scripts/stats.mjs
         env:
-          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
-          GITHUB_TOKEN: ${{ github.token }}
           GH_USER: ${{ github.repository_owner }}
           OUT_DIR: assets/generated
           EXCLUDE_REPOS: GCam-cracked,SecLists,test,de-pixelate_gaV-O6NPWrI
