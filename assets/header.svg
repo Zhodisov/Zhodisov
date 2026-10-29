@@ -40,9 +40,9 @@
   </rect>
   <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11">
     <g fill="#223049">
-      <text x="42" y="60">4D 5A 90 00 03 00 00 00</text>
-      <text x="42" y="80">0E 1F BA 0E 00 B4 09 CD</text>
-      <text x="42" y="100">21 B8 01 4C CD 21 54 68</text>
+      <text x="42" y="44">4D 5A 90 00 03 00 00 00</text>
+      <text x="42" y="60">0E 1F BA 0E 00 B4 09 CD</text>
+      <text x="42" y="76">21 B8 01 4C CD 21 54 68</text>
       <animate attributeName="opacity" values="0.35;0.7;0.35" dur="4s" repeatCount="indefinite"/>
     </g>
   </g>
@@ -52,15 +52,11 @@
     <text x="958" y="260">call sub_14001F2A0</text>
     <animate attributeName="opacity" values="0.6;0.3;0.6" dur="5s" repeatCount="indefinite"/>
   </g>
-  <g font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="15">
-    <text x="42" y="150" fill="#64D2FF">~/</text>
-    <text x="64" y="150" fill="#5A6b85">zhodisov</text>
-    <text x="150" y="150" fill="#3C4A66"> $</text>
-  </g>
-  <text x="40" y="214" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="86" font-weight="800" letter-spacing="2" fill="url(#word)" filter="url(#soft)">ZHODISOV</text>
-  <rect x="640" y="168" width="16" height="54" fill="#FF6B35">
+  <text x="42" y="108" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="14" fill="#5A6B85"><tspan fill="#64D2FF">~/</tspan>zhodisov <tspan fill="#3C4A66">$</tspan> whoami</text>
+  <text x="40" y="208" textLength="560" lengthAdjust="spacingAndGlyphs" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="86" font-weight="800" fill="url(#word)">ZHODISOV</text>
+  <rect x="628" y="150" width="14" height="60" fill="#FF6B35">
     <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
   </rect>
-  <rect x="42" y="236" width="620" height="2" rx="1" fill="url(#rule)"/>
+  <rect x="42" y="232" width="600" height="2" rx="1" fill="url(#rule)"/>
   <text x="44" y="268" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="16" letter-spacing="3" fill="#9FB0C8">REVERSE&#160;ENGINEERING<tspan fill="#394A66">&#160;&#160;·&#160;&#160;</tspan>FULL-STACK<tspan fill="#394A66">&#160;&#160;·&#160;&#160;</tspan>AUTOMATION&#160;&amp;&#160;SYSTEMS</text>
 </svg>
