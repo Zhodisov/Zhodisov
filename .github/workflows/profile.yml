@@ -1,0 +1,50 @@
+name: Update profile stats
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # every 6 hours
+  workflow_dispatch:          # manual run
+
+permissions:
+  contents: write
+
+concurrency:
+  group: profile-stats
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      # STATS_TOKEN (fine-grained PAT, read-only) includes private repos and languages.
+      # Without it, GITHUB_TOKEN only sees public data.
+      - name: Generate stat cards
+        run: node scripts/stats.mjs
+        env:
+          STATS_TOKEN: ${{ secrets.STATS_TOKEN }}
+          GITHUB_TOKEN: ${{ github.token }}
+          GH_USER: ${{ github.repository_owner }}
+          OUT_DIR: assets/generated
+          EXCLUDE_REPOS: GCam-cracked,SecLists,test,de-pixelate_gaV-O6NPWrI
+
+      - name: Generate contribution snake
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            assets/generated/snake-dark.svg?palette=github-dark&color_snake=#FF6B35&color_dots=#161B22,#3b2a1a,#7a3f22,#d35a2e,#FF6B35
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/generated
+          git diff --cached --quiet || git commit -m "chore: refresh profile stats [skip ci]"
+          git push

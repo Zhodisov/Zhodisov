@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="490" height="270" viewBox="0 0 490 270" fill="none" role="img" aria-label="Most active on Mon">
+  <style>
+    .f{opacity:0;animation:in .6s ease-out forwards}
+    @keyframes in{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+    .g{transform-box:fill-box;transform-origin:left;animation:grow 1s cubic-bezier(.2,.8,.2,1) forwards;transform:scaleX(0)}
+    @keyframes grow{to{transform:scaleX(1)}}
+    .u{transform-box:fill-box;transform-origin:bottom;animation:up .9s cubic-bezier(.2,.8,.2,1) forwards;transform:scaleY(0)}
+    @keyframes up{to{transform:scaleY(1)}}
+    @media (prefers-reduced-motion:reduce){.f,.g,.u{animation:none;opacity:1;transform:none}}
+  </style>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#0D1117"/><stop offset="1" stop-color="#0A0D13"/></linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#FF6B35"/><stop offset="1" stop-color="#E63946"/></linearGradient>
+    <linearGradient id="accv" x1="0" y1="1" x2="0" y2="0"><stop offset="0" stop-color="#E63946"/><stop offset="1" stop-color="#FF6B35"/></linearGradient>
+  </defs>
+  <rect x="0.5" y="0.5" width="489" height="269" rx="14" fill="url(#bg)" stroke="#1B2436"/>
+  <text x="28" y="42" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="18" font-weight="700" fill="#EEF2F8">Contributions by weekday</text>
+  <rect x="28" y="52" width="40" height="3" rx="1.5" fill="url(#acc)"/>
+  <rect class="u" style="animation-delay:0ms" x="40" y="138.27611484422727" width="40" height="75.72388515577275" rx="5" fill="#233046"/>
+  <text x="60" y="130.27611484422727" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,033</text>
+  <text x="60" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Sun</text>
+  <rect class="u" style="animation-delay:60ms" x="101.66666666666667" y="94" width="40" height="120" rx="5" fill="url(#accv)"/>
+  <text x="121.66666666666667" y="86" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#FF6B35">1,637</text>
+  <text x="121.66666666666667" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Mon</text>
+  <rect class="u" style="animation-delay:120ms" x="163.33333333333334" y="105.36224801466096" width="40" height="108.63775198533904" rx="5" fill="#233046"/>
+  <text x="183.33333333333334" y="97.36224801466096" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,482</text>
+  <text x="183.33333333333334" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Tue</text>
+  <rect class="u" style="animation-delay:180ms" x="225" y="104.40928527794748" width="40" height="109.59071472205252" rx="5" fill="#233046"/>
+  <text x="245" y="96.40928527794748" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,495</text>
+  <text x="245" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Wed</text>
+  <rect class="u" style="animation-delay:240ms" x="286.6666666666667" y="104.2626756261454" width="40" height="109.7373243738546" rx="5" fill="#233046"/>
+  <text x="306.6666666666667" y="96.2626756261454" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,497</text>
+  <text x="306.6666666666667" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Thu</text>
+  <rect class="u" style="animation-delay:300ms" x="348.33333333333337" y="125.88759926695174" width="40" height="88.11240073304826" rx="5" fill="#233046"/>
+  <text x="368.33333333333337" y="117.88759926695174" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,202</text>
+  <text x="368.33333333333337" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Fri</text>
+  <rect class="u" style="animation-delay:360ms" x="410" y="109.76053756872328" width="40" height="104.23946243127672" rx="5" fill="#233046"/>
+  <text x="430" y="101.76053756872328" text-anchor="middle" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#9FB0C8">1,422</text>
+  <text x="430" y="234" text-anchor="middle" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="12" fill="#5A6B85">Sat</text>
+</svg>
