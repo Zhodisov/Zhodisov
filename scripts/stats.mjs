@@ -65,7 +65,7 @@ async function fetchRepos(uid) {
     const d = await gql(`query($login:String!,$after:String,$uid:ID!){ user(login:$login){
       repositories(first:20, after:$after, ownerAffiliations:OWNER){
         pageInfo{hasNextPage endCursor}
-        nodes{ name isFork isPrivate stargazerCount pushedAt
+        nodes{ name description isFork isPrivate stargazerCount forkCount pushedAt
           primaryLanguage{name color}
           languages(first:12, orderBy:{field:SIZE,direction:DESC}){ edges{size node{name color}} }
           defaultBranchRef{ target{ ... on Commit{ history(author:{id:$uid}){ totalCount } } } } }
@@ -228,6 +228,31 @@ function projectsCard(featured, top) {
   return svg(W, ty + 22 + top.length * 32 + 18, `Projects: ${featured.title} and top repositories by commits`, parts.join("\n  "));
 }
 
+function publicCard(repos) {
+  const W = 1000;
+  const parts = [label(32, 44, "PUBLIC REPOSITORIES")];
+  const ty = 84;
+  const col = { name: 32, desc: 330, lang: 700, stars: 900, forks: 968 };
+  parts.push(text(col.name, ty, "REPOSITORY", { size: 10.5, fill: C.dim, spacing: 2 }));
+  parts.push(text(col.desc, ty, "DESCRIPTION", { size: 10.5, fill: C.dim, spacing: 2 }));
+  parts.push(text(col.lang, ty, "LANGUAGE", { size: 10.5, fill: C.dim, spacing: 2 }));
+  parts.push(text(col.stars, ty, "STARS", { size: 10.5, fill: C.dim, spacing: 2, anchor: "end" }));
+  parts.push(text(col.forks, ty, "FORKS", { size: 10.5, fill: C.dim, spacing: 2, anchor: "end" }));
+  repos.forEach((r, i) => {
+    const y = ty + 22 + i * 32;
+    parts.push(`<line x1="32" y1="${y - 6}" x2="968" y2="${y - 6}" stroke="${C.faint}"/>`);
+    parts.push(text(col.name, y + 15, esc(trunc(r.name, 34)), { size: 13.5, fill: C.title, font: SANS, weight: 600 }));
+    parts.push(text(col.desc, y + 15, esc(trunc(r.description || "—", 46)), { size: 12.5, fill: r.description ? C.text : C.mute, font: SANS }));
+    if (r.primaryLanguage) {
+      parts.push(`<circle cx="${col.lang + 4}" cy="${y + 11}" r="4" fill="${r.primaryLanguage.color || C.text}"/>`);
+      parts.push(text(col.lang + 14, y + 15, esc(trunc(r.primaryLanguage.name, 14)), { size: 12, fill: C.text }));
+    } else parts.push(text(col.lang, y + 15, "—", { size: 12, fill: C.mute }));
+    parts.push(text(col.stars, y + 15, fmt(r.stargazerCount), { size: 12.5, fill: r.stargazerCount ? C.orange : C.dim, anchor: "end" }));
+    parts.push(text(col.forks, y + 15, fmt(r.forkCount), { size: 12.5, fill: r.forkCount ? C.title : C.dim, anchor: "end" }));
+  });
+  return svg(W, ty + 22 + repos.length * 32 + 18, "Public repositories: " + repos.map((r) => r.name).join(", "), parts.join("\n  "));
+}
+
 // ---------- main ----------
 function streaks(days) {
   const today = new Date().toISOString().slice(0, 10);
@@ -318,10 +343,16 @@ const topRepos = own
   .sort((a, b) => b.commits - a.commits)
   .slice(0, Number(process.env.PROJECTS_COUNT) || 8);
 
+const publicRepos = own
+  .filter((r) => !r.isPrivate && !HIDE.has(r.name.toLowerCase()) && !featuredSet.has(r.name.toLowerCase()) && r.name.toLowerCase() !== USER.toLowerCase())
+  .sort((a, b) => b.stargazerCount - a.stargazerCount || b.forkCount - a.forkCount || b.commits - a.commits)
+  .slice(0, Number(process.env.PUBLIC_COUNT) || 6);
+
 mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/activity.svg`, activityCard(stats));
 writeFileSync(`${OUT}/projects.svg`, projectsCard(featured, topRepos));
+writeFileSync(`${OUT}/public.svg`, publicCard(publicRepos));
 console.log("Wrote activity.svg, projects.svg", {
   contributions: stats.totalContrib, commits: stats.commits, streak: stats.current.len, longest: stats.longest.len,
-  featured: featured.commits, top: topRepos.map((r) => `${r.name}:${r.commits}`).join(" "),
+  featured: featured.commits, public: publicRepos.map((r) => r.name).join(" "), top: topRepos.map((r) => `${r.name}:${r.commits}`).join(" "),
 });

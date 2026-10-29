@@ -35,7 +35,7 @@ jobs:
           OUT_DIR: assets/generated
           EXCLUDE_REPOS: GCam-cracked,SecLists,test,de-pixelate_gaV-O6NPWrI
           HIDE_PROJECTS: NEW-SAFEMARKET-JSON,SafeMarket-Update,DisneyClient-Menu,SafeMarket-Server,profile-readme-test,SAFEMARKETV2-ENDPOINTDISCORD,PUBLIC,dbs,db,DisneyClient-Parser,Discord-IPGrabber,portfoliotheo
-          PROJECTS_COUNT: 12
+          PROJECTS_COUNT: 7
 
       - name: Commit if changed
         run: |
