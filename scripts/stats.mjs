@@ -16,8 +16,13 @@ if (!TOKEN) throw new Error("STATS_TOKEN or GITHUB_TOKEN required");
 const FEATURED = {
   title: "Lushvae.xyz",
   url: "lushvae.xyz",
-  desc: "Loader, key server and web panel",
+  desc: "Transformice menu · Free & paid plans (Core, Flow, Apex)",
+  sub: "Launcher · menu · autonomous Survivor · cloud saves · licenses",
   repos: ["Lushvae-private", "Lushvae"],
+  // Site logo (lushvae.xyz/public/site/img/logo.svg), 100x100 viewBox.
+  logo: `<path d="M50 4C80 20 95 50 81 76C70 95 38 99 22 84C6 69 10 38 50 4Z" fill="#F4F4F5"/>
+    <path d="M47 24L42 72L70 67" fill="none" stroke="#0B0B0C" stroke-width="7.5" stroke-linecap="round" stroke-linejoin="round"/>
+    <path d="M42 50L30 42M44 38L56 30" fill="none" stroke="#0B0B0C" stroke-width="3" stroke-linecap="round" opacity=".85"/>`,
 };
 
 const C = {
@@ -187,16 +192,18 @@ function projectsCard(featured, top) {
   const parts = [label(32, 44, "PROJECTS")];
 
   // Featured row.
-  const fy = 68;
-  parts.push(`<rect x="32" y="${fy}" width="936" height="72" rx="8" fill="${C.faint}" stroke="${C.line}"/>`);
-  parts.push(`<rect x="32" y="${fy + 14}" width="3" height="44" rx="1.5" fill="${C.orange}"/>`);
-  parts.push(text(54, fy + 32, esc(featured.title), { size: 18, fill: C.title, font: SANS, weight: 700 }));
-  parts.push(text(54, fy + 54, esc(featured.desc), { size: 13, fill: C.text, font: SANS }));
-  parts.push(text(952, fy + 32, esc(featured.url) + " ↗", { size: 12, fill: C.cyan, anchor: "end" }));
-  parts.push(text(952, fy + 54, esc(`${fmt(featured.commits)} commits · ${featured.lang} · active ${monthYear(featured.pushedAt)}`), { size: 12, fill: C.dim, anchor: "end" }));
+  const fy = 68, fh = 92;
+  parts.push(`<rect x="32" y="${fy}" width="936" height="${fh}" rx="8" fill="${C.faint}" stroke="${C.line}"/>`);
+  parts.push(`<g transform="translate(52 ${fy + 20}) scale(0.52)">${featured.logo}</g>`);
+  parts.push(text(118, fy + 36, esc(featured.title), { size: 19, fill: C.title, font: SANS, weight: 700 }));
+  parts.push(text(118, fy + 58, esc(featured.desc), { size: 13.5, fill: C.text, font: SANS }));
+  parts.push(text(118, fy + 77, esc(featured.sub), { size: 12, fill: C.dim, font: SANS }));
+  parts.push(text(952, fy + 36, esc(featured.url) + " ↗", { size: 12, fill: C.cyan, anchor: "end" }));
+  parts.push(text(952, fy + 58, esc(`${fmt(featured.commits)} commits · ${featured.lang}`), { size: 12, fill: C.dim, anchor: "end" }));
+  parts.push(text(952, fy + 77, esc(`active ${monthYear(featured.pushedAt)}`), { size: 12, fill: C.dim, anchor: "end" }));
 
   // Table of repositories by own commits.
-  const ty = fy + 110;
+  const ty = fy + fh + 38;
   const col = { name: 32, vis: 400, lang: 500, bar: 640, commits: 870, last: 968 };
   parts.push(text(col.name, ty, "REPOSITORY", { size: 10.5, fill: C.dim, spacing: 2 }));
   parts.push(text(col.vis, ty, "ACCESS", { size: 10.5, fill: C.dim, spacing: 2 }));
