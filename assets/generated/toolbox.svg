@@ -1,0 +1,127 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="304" viewBox="0 0 1000 304" fill="none" role="img" aria-label="Toolbox: Languages: TypeScript, Python, Rust, C++, C#, Go, Kotlin, Lua, ActionScript; Web &amp; apps: Next.js, React, Node.js, Tailwind, Vite, Stripe; Data &amp; infra: PostgreSQL, Drizzle, SQLite, Turso, Redis, Docker, Caddy; Reverse eng.: Ghidra, IDA Pro, Frida, x64dbg, Cheat Engine, Wireshark, Burp Suite, Fiddler; Tooling: Git, Linux, VS Code, Visual Studio, pnpm, esbuild, Postman, GitHub Actions">
+  <rect x="0.5" y="0.5" width="999" height="303" rx="12" fill="#0B0E14" stroke="#1B2436"/>
+<text x="32" y="44" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="11" fill="#5A6B85" font-weight="400" letter-spacing="2.5">TOOLBOX</text>
+  <text x="32" y="91" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#5A6B85" font-weight="400">languages</text>
+  <rect x="180" y="74" width="103" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="192" cy="87" r="3.5" fill="#3178C6"/>
+  <text x="202" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">TypeScript</text>
+  <rect x="291" y="74" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="303" cy="87" r="3.5" fill="#3572A5"/>
+  <text x="313" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Python</text>
+  <rect x="373" y="74" width="59" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="385" cy="87" r="3.5" fill="#DEA584"/>
+  <text x="395" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Rust</text>
+  <rect x="440" y="74" width="52" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="452" cy="87" r="3.5" fill="#F34B7D"/>
+  <text x="462" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">C++</text>
+  <rect x="500" y="74" width="45" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="512" cy="87" r="3.5" fill="#178600"/>
+  <text x="522" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">C#</text>
+  <rect x="553" y="74" width="45" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="565" cy="87" r="3.5" fill="#00ADD8"/>
+  <text x="575" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Go</text>
+  <rect x="606" y="74" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="618" cy="87" r="3.5" fill="#A97BFF"/>
+  <text x="628" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Kotlin</text>
+  <rect x="688" y="74" width="52" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="700" cy="87" r="3.5" fill="#4F6BF2"/>
+  <text x="710" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Lua</text>
+  <rect x="748" y="74" width="118" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="760" cy="87" r="3.5" fill="#882B0F"/>
+  <text x="770" y="91.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">ActionScript</text>
+  <line x1="32" y1="108" x2="968" y2="108" stroke="#131A26"/>
+  <text x="32" y="135" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#5A6B85" font-weight="400">web &amp; apps</text>
+  <rect x="180" y="118" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="192" cy="131" r="3.5" fill="#E6EDF3"/>
+  <text x="202" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Next.js</text>
+  <rect x="269" y="118" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="281" cy="131" r="3.5" fill="#61DAFB"/>
+  <text x="291" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">React</text>
+  <rect x="344" y="118" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="356" cy="131" r="3.5" fill="#5FA04E"/>
+  <text x="366" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Node.js</text>
+  <rect x="433" y="118" width="88" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="445" cy="131" r="3.5" fill="#38BDF8"/>
+  <text x="455" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Tailwind</text>
+  <rect x="529" y="118" width="59" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="541" cy="131" r="3.5" fill="#FFD62E"/>
+  <text x="551" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Vite</text>
+  <rect x="596" y="118" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="608" cy="131" r="3.5" fill="#635BFF"/>
+  <text x="618" y="135.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Stripe</text>
+  <line x1="32" y1="152" x2="968" y2="152" stroke="#131A26"/>
+  <text x="32" y="179" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#5A6B85" font-weight="400">data &amp; infra</text>
+  <rect x="180" y="162" width="103" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="192" cy="175" r="3.5" fill="#4169E1"/>
+  <text x="202" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">PostgreSQL</text>
+  <rect x="291" y="162" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="303" cy="175" r="3.5" fill="#C5F74F"/>
+  <text x="313" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Drizzle</text>
+  <rect x="380" y="162" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="392" cy="175" r="3.5" fill="#5BA4D9"/>
+  <text x="402" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">SQLite</text>
+  <rect x="462" y="162" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="474" cy="175" r="3.5" fill="#4FF8D2"/>
+  <text x="484" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Turso</text>
+  <rect x="537" y="162" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="549" cy="175" r="3.5" fill="#DC382D"/>
+  <text x="559" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Redis</text>
+  <rect x="612" y="162" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="624" cy="175" r="3.5" fill="#2496ED"/>
+  <text x="634" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Docker</text>
+  <rect x="694" y="162" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="706" cy="175" r="3.5" fill="#1F88C0"/>
+  <text x="716" y="179.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Caddy</text>
+  <line x1="32" y1="196" x2="968" y2="196" stroke="#131A26"/>
+  <text x="32" y="223" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#5A6B85" font-weight="400">reverse eng.</text>
+  <rect x="180" y="206" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="192" cy="219" r="3.5" fill="#FF6B35"/>
+  <text x="202" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Ghidra</text>
+  <rect x="262" y="206" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="274" cy="219" r="3.5" fill="#9FB0C8"/>
+  <text x="284" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">IDA Pro</text>
+  <rect x="351" y="206" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="363" cy="219" r="3.5" fill="#E63946"/>
+  <text x="373" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Frida</text>
+  <rect x="426" y="206" width="74" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="438" cy="219" r="3.5" fill="#9FB0C8"/>
+  <text x="448" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">x64dbg</text>
+  <rect x="508" y="206" width="118" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="520" cy="219" r="3.5" fill="#B01030"/>
+  <text x="530" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Cheat Engine</text>
+  <rect x="634" y="206" width="96" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="646" cy="219" r="3.5" fill="#1679A7"/>
+  <text x="656" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Wireshark</text>
+  <rect x="738" y="206" width="103" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="750" cy="219" r="3.5" fill="#FF6633"/>
+  <text x="760" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Burp Suite</text>
+  <rect x="849" y="206" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="861" cy="219" r="3.5" fill="#1E5B97"/>
+  <text x="871" y="223.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Fiddler</text>
+  <line x1="32" y1="240" x2="968" y2="240" stroke="#131A26"/>
+  <text x="32" y="267" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="13" fill="#5A6B85" font-weight="400">tooling</text>
+  <rect x="180" y="250" width="52" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="192" cy="263" r="3.5" fill="#F05032"/>
+  <text x="202" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Git</text>
+  <rect x="240" y="250" width="67" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="252" cy="263" r="3.5" fill="#FCC624"/>
+  <text x="262" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Linux</text>
+  <rect x="315" y="250" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="327" cy="263" r="3.5" fill="#0A66C2"/>
+  <text x="337" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">VS Code</text>
+  <rect x="404" y="250" width="125" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="416" cy="263" r="3.5" fill="#8661C5"/>
+  <text x="426" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Visual Studio</text>
+  <rect x="537" y="250" width="59" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="549" cy="263" r="3.5" fill="#F69220"/>
+  <text x="559" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">pnpm</text>
+  <rect x="604" y="250" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="616" cy="263" r="3.5" fill="#FFCF00"/>
+  <text x="626" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">esbuild</text>
+  <rect x="693" y="250" width="81" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="705" cy="263" r="3.5" fill="#FF6C37"/>
+  <text x="715" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">Postman</text>
+  <rect x="782" y="250" width="132" height="26" rx="6" fill="#131A26" stroke="#1B2436"/>
+  <circle cx="794" cy="263" r="3.5" fill="#2088FF"/>
+  <text x="804" y="267.5" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400">GitHub Actions</text>
+</svg>
