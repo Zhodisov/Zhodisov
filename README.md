@@ -3,27 +3,8 @@
 <img src="./assets/header.svg" alt="Zhodisov · Reverse Engineering · Full-Stack · Automation" width="100%" />
 
 <br/>
-<br/>
 
 <img src="https://komarev.com/ghpvc/?username=Zhodisov&base=30408&label=PROFILE%20VIEWS&color=FF6B35&style=for-the-badge" alt="Profile views" />
-
-</div>
-
-<br/>
-
-<div align="center">
-
-I take software apart to see how it works, then build things that last.
-<br/>
-Reverse engineering, full-stack products, and the automation in between.
-
-</div>
-
-<br/>
-
-<div align="center">
-
-<img src="./assets/focus.svg" alt="Reverse Engineering · Full-Stack · Automation" width="100%" />
 
 </div>
 
@@ -41,11 +22,11 @@ Reverse engineering, full-stack products, and the automation in between.
 
 <img src="./assets/generated/activity.svg" alt="Activity: contributions, commits, streaks, heatmap and languages" width="100%" />
 
-<br/><br/>
+<br/>
 
 <a href="https://lushvae.xyz"><img src="./assets/generated/projects.svg" alt="Projects: Lushvae.xyz and top repositories by commits" width="100%" /></a>
 
-<br/><br/>
+<br/>
 
 <a href="https://github.com/Zhodisov?tab=repositories&type=source"><img src="./assets/generated/public.svg" alt="Public repositories" width="100%" /></a>
 

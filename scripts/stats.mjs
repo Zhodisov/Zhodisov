@@ -1,7 +1,7 @@
 // Generates the profile README cards (SVG): activity + projects.
 // Runs in GitHub Actions (or locally): STATS_TOKEN or GITHUB_TOKEN, GH_USER.
 // No dependencies, Node 20+.
-import { mkdirSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 
 const TOKEN = process.env.STATS_TOKEN || process.env.GITHUB_TOKEN;
 const USER = process.env.GH_USER || "Zhodisov";
@@ -10,6 +10,8 @@ const list = (v) => new Set((v || "").split(",").map((s) => s.trim().toLowerCase
 const EXCLUDE = list(process.env.EXCLUDE_REPOS);
 // Repos kept in the stats but not listed in the projects table.
 const HIDE = list(process.env.HIDE_PROJECTS);
+// Repos forced to the top of the projects table, in this order.
+const PIN = (process.env.PIN_PROJECTS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
 if (!TOKEN) throw new Error("STATS_TOKEN or GITHUB_TOKEN required");
 
 // Featured project: shown on top of the projects card, commits summed over its repos.
@@ -17,7 +19,6 @@ const FEATURED = {
   title: "Lushvae.xyz",
   url: "lushvae.xyz",
   desc: "Transformice menu · Free & paid plans (Core, Flow, Apex)",
-  sub: "Launcher · menu · autonomous Survivor · cloud saves · licenses",
   repos: ["Lushvae-private", "Lushvae"],
   // Site logo (lushvae.xyz/public/site/img/logo.svg), 100x100 viewBox.
   logo: `<path d="M50 4C80 20 95 50 81 76C70 95 38 99 22 84C6 69 10 38 50 4Z" fill="#F4F4F5"/>
@@ -192,15 +193,13 @@ function projectsCard(featured, top) {
   const parts = [label(32, 44, "PROJECTS")];
 
   // Featured row.
-  const fy = 68, fh = 92;
+  const fy = 68, fh = 76;
   parts.push(`<rect x="32" y="${fy}" width="936" height="${fh}" rx="8" fill="${C.faint}" stroke="${C.line}"/>`);
-  parts.push(`<g transform="translate(52 ${fy + 20}) scale(0.52)">${featured.logo}</g>`);
-  parts.push(text(118, fy + 36, esc(featured.title), { size: 19, fill: C.title, font: SANS, weight: 700 }));
-  parts.push(text(118, fy + 58, esc(featured.desc), { size: 13.5, fill: C.text, font: SANS }));
-  parts.push(text(118, fy + 77, esc(featured.sub), { size: 12, fill: C.dim, font: SANS }));
-  parts.push(text(952, fy + 36, esc(featured.url) + " ↗", { size: 12, fill: C.cyan, anchor: "end" }));
-  parts.push(text(952, fy + 58, esc(`${fmt(featured.commits)} commits · ${featured.lang}`), { size: 12, fill: C.dim, anchor: "end" }));
-  parts.push(text(952, fy + 77, esc(`active ${monthYear(featured.pushedAt)}`), { size: 12, fill: C.dim, anchor: "end" }));
+  parts.push(`<g transform="translate(52 ${fy + 16}) scale(0.44)">${featured.logo}</g>`);
+  parts.push(text(112, fy + 33, esc(featured.title), { size: 19, fill: C.title, font: SANS, weight: 700 }));
+  parts.push(text(112, fy + 55, esc(featured.desc), { size: 13.5, fill: C.text, font: SANS }));
+  parts.push(text(952, fy + 33, esc(featured.url) + " ↗", { size: 12, fill: C.cyan, anchor: "end" }));
+  parts.push(text(952, fy + 55, esc(`${fmt(featured.commits)} commits · ${featured.lang} · active ${monthYear(featured.pushedAt)}`), { size: 12, fill: C.dim, anchor: "end" }));
 
   // Table of repositories by own commits.
   const ty = fy + fh + 38;
@@ -261,8 +260,11 @@ const TOOLBOX = [
   ["Tooling", [["Git", "#F05032"], ["Linux", "#FCC624"], ["VS Code", "#0A66C2"], ["Visual Studio", "#8661C5"], ["pnpm", "#F69220"], ["esbuild", "#FFCF00"], ["Postman", "#FF6C37"], ["GitHub Actions", "#2088FF"]]],
 ];
 
+// Simple Icons paths (24x24), vendored in scripts/icons.json; tools without one get a dot.
+const ICONS = JSON.parse(readFileSync(new URL("./icons.json", import.meta.url), "utf8"));
+
 function toolboxCard() {
-  const W = 1000, rowH = 44, x0 = 180, charW = 7.3;
+  const W = 1000, rowH = 44, x0 = 160, charW = 7.1;
   const parts = [label(32, 44, "TOOLBOX")];
   TOOLBOX.forEach(([cat, items], i) => {
     const y = 72 + i * rowH;
@@ -270,10 +272,11 @@ function toolboxCard() {
     parts.push(text(32, y + 19, esc(cat.toLowerCase()), { fill: C.dim }));
     let x = x0;
     for (const [name, color] of items) {
-      const w = Math.round(name.length * charW + 30);
+      const w = Math.round(name.length * charW + 38);
       parts.push(`<rect x="${x}" y="${y + 2}" width="${w}" height="26" rx="6" fill="${C.faint}" stroke="${C.line}"/>`);
-      parts.push(`<circle cx="${x + 12}" cy="${y + 15}" r="3.5" fill="${color}"/>`);
-      parts.push(text(x + 22, y + 19.5, esc(name), { size: 12.5, fill: C.title }));
+      if (ICONS[name]) parts.push(`<path transform="translate(${x + 8} ${y + 8}) scale(0.5834)" d="${ICONS[name]}" fill="${color}"/>`);
+      else parts.push(`<circle cx="${x + 15}" cy="${y + 15}" r="3.5" fill="${color}"/>`);
+      parts.push(text(x + 28, y + 19.5, esc(name), { size: 12.5, fill: C.title }));
       x += w + 8;
     }
   });
@@ -365,9 +368,10 @@ const featured = {
   lang: featuredRepos.map((r) => r.primaryLanguage?.name).find(Boolean) || "—",
   pushedAt: featuredRepos.map((r) => r.pushedAt).sort().pop() || new Date().toISOString(),
 };
+const rank = (r) => { const i = PIN.indexOf(r.name.toLowerCase()); return i < 0 ? PIN.length : i; };
 const topRepos = own
-  .filter((r) => !featuredSet.has(r.name.toLowerCase()) && !HIDE.has(r.name.toLowerCase()) && r.name.toLowerCase() !== USER.toLowerCase() && r.commits > 0)
-  .sort((a, b) => b.commits - a.commits)
+  .filter((r) => (PIN.includes(r.name.toLowerCase()) || !featuredSet.has(r.name.toLowerCase())) && !HIDE.has(r.name.toLowerCase()) && r.name.toLowerCase() !== USER.toLowerCase() && r.commits > 0)
+  .sort((a, b) => rank(a) - rank(b) || b.commits - a.commits)
   .slice(0, Number(process.env.PROJECTS_COUNT) || 8);
 
 const publicRepos = own
