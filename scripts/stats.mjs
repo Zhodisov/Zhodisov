@@ -159,11 +159,11 @@ function streakCard(s) {
     const ring = c.ring
       ? `<circle cx="${c.x}" cy="118" r="46" stroke="${C.grid}" stroke-width="5"/>
     <circle cx="${c.x}" cy="118" r="46" stroke="url(#acc)" stroke-width="5" stroke-linecap="round" stroke-dasharray="289" stroke-dashoffset="289" transform="rotate(-90 ${c.x} 118)"><animate attributeName="stroke-dashoffset" from="289" to="0" dur="1.2s" fill="freeze"/></circle>
-    ${icon("flame", c.x - 8, 56, C.orange)}`
+    ${icon("flame", c.x - 8, 82, C.orange)}`
       : "";
     return `  <g class="f" style="animation-delay:${i * 120}ms" text-anchor="middle">
     ${ring}
-    <text x="${c.x}" y="130" font-family="${SANS}" font-size="32" font-weight="700" fill="${C.title}">${c.big}</text>
+    <text x="${c.x}" y="${c.ring ? 138 : 130}" font-family="${SANS}" font-size="32" font-weight="700" fill="${C.title}">${c.big}</text>
     <text x="${c.x}" y="196" font-family="${SANS}" font-size="15" font-weight="600" fill="${c.col}">${c.label}</text>
     <text x="${c.x}" y="218" font-family="${SANS}" font-size="12" fill="${C.dim}">${c.sub}</text>
   </g>`;
@@ -192,7 +192,7 @@ function languagesCard(langs, totalRepos) {
   const body = `  <clipPath id="bar"><rect x="${bx}" y="74" width="${bw}" height="10" rx="5"/></clipPath>
   <g clip-path="url(#bar)"><rect x="${bx}" y="74" width="${bw}" height="10" fill="${C.grid}"/>${bar}</g>
 ${list}
-  <text x="28" y="${118 + 4 * 30 + 6}" font-family="${SANS}" font-size="12" fill="${C.dim}">By code size across ${totalRepos} repositories (forks excluded)</text>`;
+  <text x="28" y="${118 + 4 * 30 + 6}" font-family="${SANS}" font-size="12" fill="${C.dim}">Weighted by code size across ${totalRepos} repositories (forks excluded)</text>`;
   return frame(W, 270, "Top languages", body, "Top languages: " + top.map((l) => `${l.name} ${l.pct.toFixed(1)}%`).join(", "));
 }
 
@@ -299,7 +299,8 @@ const own = repos.filter((r) => !r.isFork && !EXCLUDE.has(r.name.toLowerCase()))
 const langBytes = new Map();
 for (const r of own) for (const e of r.languages.edges) {
   const cur = langBytes.get(e.node.name) || { name: e.node.name, color: e.node.color || C.text, size: 0 };
-  cur.size += e.size;
+  // sqrt damps repos with huge generated/vendored files.
+  cur.size += Math.sqrt(e.size);
   langBytes.set(e.node.name, cur);
 }
 const langTotal = [...langBytes.values()].reduce((a, l) => a + l.size, 0) || 1;
