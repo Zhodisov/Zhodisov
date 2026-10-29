@@ -253,6 +253,33 @@ function publicCard(repos) {
   return svg(W, ty + 22 + repos.length * 32 + 18, "Public repositories: " + repos.map((r) => r.name).join(", "), parts.join("\n  "));
 }
 
+const TOOLBOX = [
+  ["Languages", [["TypeScript", "#3178C6"], ["Python", "#3572A5"], ["Rust", "#DEA584"], ["C++", "#F34B7D"], ["C#", "#178600"], ["Go", "#00ADD8"], ["Kotlin", "#A97BFF"], ["Lua", "#4F6BF2"], ["ActionScript", "#882B0F"]]],
+  ["Web & apps", [["Next.js", "#E6EDF3"], ["React", "#61DAFB"], ["Node.js", "#5FA04E"], ["Tailwind", "#38BDF8"], ["Vite", "#FFD62E"], ["Stripe", "#635BFF"]]],
+  ["Data & infra", [["PostgreSQL", "#4169E1"], ["Drizzle", "#C5F74F"], ["SQLite", "#5BA4D9"], ["Turso", "#4FF8D2"], ["Redis", "#DC382D"], ["Docker", "#2496ED"], ["Caddy", "#1F88C0"]]],
+  ["Reverse eng.", [["Ghidra", "#FF6B35"], ["IDA Pro", "#9FB0C8"], ["Frida", "#E63946"], ["x64dbg", "#9FB0C8"], ["Cheat Engine", "#B01030"], ["Wireshark", "#1679A7"], ["Burp Suite", "#FF6633"], ["Fiddler", "#1E5B97"]]],
+  ["Tooling", [["Git", "#F05032"], ["Linux", "#FCC624"], ["VS Code", "#0A66C2"], ["Visual Studio", "#8661C5"], ["pnpm", "#F69220"], ["esbuild", "#FFCF00"], ["Postman", "#FF6C37"], ["GitHub Actions", "#2088FF"]]],
+];
+
+function toolboxCard() {
+  const W = 1000, rowH = 44, x0 = 180, charW = 7.3;
+  const parts = [label(32, 44, "TOOLBOX")];
+  TOOLBOX.forEach(([cat, items], i) => {
+    const y = 72 + i * rowH;
+    if (i) parts.push(`<line x1="32" y1="${y - 8}" x2="968" y2="${y - 8}" stroke="${C.faint}"/>`);
+    parts.push(text(32, y + 19, esc(cat.toLowerCase()), { fill: C.dim }));
+    let x = x0;
+    for (const [name, color] of items) {
+      const w = Math.round(name.length * charW + 30);
+      parts.push(`<rect x="${x}" y="${y + 2}" width="${w}" height="26" rx="6" fill="${C.faint}" stroke="${C.line}"/>`);
+      parts.push(`<circle cx="${x + 12}" cy="${y + 15}" r="3.5" fill="${color}"/>`);
+      parts.push(text(x + 22, y + 19.5, esc(name), { size: 12.5, fill: C.title }));
+      x += w + 8;
+    }
+  });
+  return svg(W, 72 + TOOLBOX.length * rowH + 12, "Toolbox: " + TOOLBOX.map(([c, it]) => `${c}: ${it.map((t) => t[0]).join(", ")}`).join("; "), parts.join("\n  "));
+}
+
 // ---------- main ----------
 function streaks(days) {
   const today = new Date().toISOString().slice(0, 10);
@@ -352,6 +379,7 @@ mkdirSync(OUT, { recursive: true });
 writeFileSync(`${OUT}/activity.svg`, activityCard(stats));
 writeFileSync(`${OUT}/projects.svg`, projectsCard(featured, topRepos));
 writeFileSync(`${OUT}/public.svg`, publicCard(publicRepos));
+writeFileSync(`${OUT}/toolbox.svg`, toolboxCard());
 console.log("Wrote activity.svg, projects.svg", {
   contributions: stats.totalContrib, commits: stats.commits, streak: stats.current.len, longest: stats.longest.len,
   featured: featured.commits, public: publicRepos.map((r) => r.name).join(" "), top: topRepos.map((r) => `${r.name}:${r.commits}`).join(" "),
