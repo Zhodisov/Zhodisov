@@ -21,7 +21,7 @@
   <text x="514" y="219" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">TypeScript</text>
   <rect x="640" y="212" width="160" height="5" rx="2.5" fill="#131A26"/>
   <rect x="640" y="212" width="160.0" height="5" rx="2.5" fill="#FF6B35"/>
-  <text x="870" y="219" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">891</text>
+  <text x="870" y="219" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">910</text>
   <text x="968" y="219" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Oct 2026</text>
   <line x1="32" y1="230" x2="968" y2="230" stroke="#131A26"/>
   <text x="32" y="251" font-family="'Segoe UI',Helvetica,Arial,sans-serif" font-size="13.5" fill="#E6EDF3" font-weight="600">Lushvae-private</text>
@@ -29,7 +29,7 @@
   <circle cx="504" cy="247" r="4" fill="#3572A5"/>
   <text x="514" y="251" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="244" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="244" width="49.6" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="244" width="48.5" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="251" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">276</text>
   <text x="968" y="251" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Oct 2026</text>
   <line x1="32" y1="262" x2="968" y2="262" stroke="#131A26"/>
@@ -38,7 +38,7 @@
   <circle cx="504" cy="279" r="4" fill="#3572A5"/>
   <text x="514" y="283" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="276" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="276" width="110.8" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="276" width="108.5" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="283" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">617</text>
   <text x="968" y="283" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Feb 2025</text>
   <line x1="32" y1="294" x2="968" y2="294" stroke="#131A26"/>
@@ -47,7 +47,7 @@
   <circle cx="504" cy="311" r="4" fill="#f34b7d"/>
   <text x="514" y="315" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">C++</text>
   <rect x="640" y="308" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="308" width="47.0" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="308" width="46.1" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="315" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">262</text>
   <text x="968" y="315" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Aug 2024</text>
   <line x1="32" y1="326" x2="968" y2="326" stroke="#131A26"/>
@@ -56,7 +56,7 @@
   <circle cx="504" cy="343" r="4" fill="#3572A5"/>
   <text x="514" y="347" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="340" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="340" width="28.0" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="340" width="27.4" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="347" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">156</text>
   <text x="968" y="347" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Sep 2026</text>
   <line x1="32" y1="358" x2="968" y2="358" stroke="#131A26"/>
@@ -65,7 +65,7 @@
   <circle cx="504" cy="375" r="4" fill="#f1e05a"/>
   <text x="514" y="379" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">JavaScript</text>
   <rect x="640" y="372" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="372" width="20.3" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="372" width="19.9" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="379" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">113</text>
   <text x="968" y="379" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Oct 2026</text>
   <line x1="32" y1="390" x2="968" y2="390" stroke="#131A26"/>
@@ -74,7 +74,7 @@
   <circle cx="504" cy="407" r="4" fill="#3572A5"/>
   <text x="514" y="411" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="404" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="404" width="13.8" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="404" width="13.5" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="411" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">77</text>
   <text x="968" y="411" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Aug 2026</text>
   <line x1="32" y1="422" x2="968" y2="422" stroke="#131A26"/>
@@ -83,7 +83,7 @@
   <circle cx="504" cy="439" r="4" fill="#3572A5"/>
   <text x="514" y="443" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#9FB0C8" font-weight="400">Python</text>
   <rect x="640" y="436" width="160" height="5" rx="2.5" fill="#131A26"/>
-  <rect x="640" y="436" width="5.0" height="5" rx="2.5" fill="#FF6B35"/>
+  <rect x="640" y="436" width="4.9" height="5" rx="2.5" fill="#FF6B35"/>
   <text x="870" y="443" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12.5" fill="#E6EDF3" font-weight="400" text-anchor="end">28</text>
   <text x="968" y="443" font-family="'SFMono-Regular',Consolas,'Liberation Mono',monospace" font-size="12" fill="#5A6B85" font-weight="400" text-anchor="end">Jun 2024</text>
 </svg>
