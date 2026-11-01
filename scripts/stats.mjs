@@ -11,6 +11,8 @@ const EXCLUDE = list(process.env.EXCLUDE_REPOS);
 // Repos kept in the stats but not listed in the projects table.
 const HIDE = list(process.env.HIDE_PROJECTS);
 // Repos forced to the top of the projects table, in this order.
+// Own commit emails not linked to the GitHub account: GitHub credits them to no one.
+const EXTRA_EMAILS = (process.env.EXTRA_EMAILS || "").split(",").map((s) => s.trim()).filter(Boolean);
 const PIN = (process.env.PIN_PROJECTS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
 if (!TOKEN) throw new Error("STATS_TOKEN or GITHUB_TOKEN required");
 
@@ -61,6 +63,7 @@ async function fetchUser() {
 
 async function fetchRepos(uid) {
   const repos = [];
+  const extraHistory = EXTRA_EMAILS.map((e, i) => `e${i}:history(first:1, author:{emails:${JSON.stringify([e])}}){ totalCount nodes{ author{ user{ login } } } }`).join(" ");
   let after = null;
   do {
     const d = await gql(`query($login:String!,$after:String,$uid:ID!){ user(login:$login){
@@ -69,10 +72,15 @@ async function fetchRepos(uid) {
         nodes{ name description isFork isPrivate stargazerCount forkCount pushedAt
           primaryLanguage{name color}
           languages(first:12, orderBy:{field:SIZE,direction:DESC}){ edges{size node{name color}} }
-          defaultBranchRef{ target{ ... on Commit{ history(author:{id:$uid}){ totalCount } } } } }
+          defaultBranchRef{ target{ ... on Commit{ history(author:{id:$uid}){ totalCount } ${extraHistory} } } } }
       }}}`, { login: USER, after, uid });
     const page = d.user.repositories;
-    repos.push(...page.nodes.map((r) => ({ ...r, commits: r.defaultBranchRef?.target?.history?.totalCount || 0 })));
+    repos.push(...page.nodes.map((r) => {
+      const target = r.defaultBranchRef?.target;
+      // Skip an email once it is linked: its commits are already in the author count.
+      const extra = EXTRA_EMAILS.reduce((a, _, i) => a + (target?.[`e${i}`]?.nodes[0]?.author?.user ? 0 : target?.[`e${i}`]?.totalCount || 0), 0);
+      return { ...r, extraCommits: extra, commits: (target?.history?.totalCount || 0) + extra };
+    }));
     after = page.pageInfo.hasNextPage ? page.pageInfo.endCursor : null;
   } while (after);
   return repos;
@@ -342,11 +350,12 @@ const weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Frida
 const wd = Array(7).fill(0);
 for (const d of days) wd[new Date(d.date + "T00:00:00Z").getUTCDay()] += d.contributionCount;
 
+const extraCommits = repos.reduce((a, r) => a + r.extraCommits, 0);
 const stats = {
   createdAt: user.createdAt,
-  totalContrib: Object.values(perYear).reduce((a, b) => a + b, 0),
+  totalContrib: Object.values(perYear).reduce((a, b) => a + b, 0) + extraCommits,
   // Private contributions are only exposed as an aggregate; count them with commits.
-  commits: sum("totalCommitContributions") + sum("restrictedContributionsCount"),
+  commits: sum("totalCommitContributions") + sum("restrictedContributionsCount") + extraCommits,
   publicRepos: repos.filter((r) => !r.isPrivate).length,
   privateRepos: repos.filter((r) => r.isPrivate).length,
   stars: repos.reduce((a, r) => a + r.stargazerCount, 0),
