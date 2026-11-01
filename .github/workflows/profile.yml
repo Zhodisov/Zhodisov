@@ -37,6 +37,7 @@ jobs:
           HIDE_PROJECTS: NEW-SAFEMARKET-JSON,SafeMarket-Update,DisneyClient-Menu,SafeMarket-Server,profile-readme-test,SAFEMARKETV2-ENDPOINTDISCORD,PUBLIC,dbs,db,DisneyClient-Parser,Discord-IPGrabber,portfoliotheo
           PROJECTS_COUNT: 8
           PIN_PROJECTS: Lisyum,Lushvae-private
+          EXTRA_EMAILS: ${{ secrets.EXTRA_EMAILS }}
 
       - name: Commit if changed
         run: |
