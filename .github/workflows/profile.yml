@@ -38,6 +38,8 @@ jobs:
           PROJECTS_COUNT: 8
           PIN_PROJECTS: Lisyum,Lushvae-private
           EXTRA_EMAILS: ${{ secrets.EXTRA_EMAILS }}
+          LANG_FOCUS: C++,Rust,C,Go,Kotlin,ActionScript,Lua,Java,Smali
+          MEMBER_SINCE: 2019-06
 
       - name: Commit if changed
         run: |

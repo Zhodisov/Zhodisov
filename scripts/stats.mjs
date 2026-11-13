@@ -10,10 +10,15 @@ const list = (v) => new Set((v || "").split(",").map((s) => s.trim().toLowerCase
 const EXCLUDE = list(process.env.EXCLUDE_REPOS);
 // Repos kept in the stats but not listed in the projects table.
 const HIDE = list(process.env.HIDE_PROJECTS);
-// Repos forced to the top of the projects table, in this order.
 // Own commit emails not linked to the GitHub account: GitHub credits them to no one.
 const EXTRA_EMAILS = (process.env.EXTRA_EMAILS || "").split(",").map((s) => s.trim()).filter(Boolean);
+// Repos forced to the top of the projects table, in this order.
 const PIN = (process.env.PIN_PROJECTS || "").split(",").map((s) => s.trim().toLowerCase()).filter(Boolean);
+// Languages shown on the activity card, in this order (only those found in own repos).
+// Unset: every language, ranked by share.
+const LANG_FOCUS = (process.env.LANG_FOCUS || "").split(",").map((s) => s.trim()).filter(Boolean);
+// Overrides the account creation date ("member since"), e.g. 2019-06 for an older account.
+const MEMBER_SINCE = process.env.MEMBER_SINCE;
 if (!TOKEN) throw new Error("STATS_TOKEN or GITHUB_TOKEN required");
 
 // Featured project: shown on top of the projects card, commits summed over its repos.
@@ -175,9 +180,17 @@ function activityCard(s) {
   const ly = Math.max(316, hBottom + 52 + years.length * 22 + 8);
   parts.push(`<line x1="32" y1="${ly}" x2="968" y2="${ly}" stroke="${C.line}"/>`);
   parts.push(label(32, ly + 34, "LANGUAGES"));
-  const top = s.langs.slice(0, 5);
-  const other = Math.max(0, 100 - top.reduce((a, l) => a + l.pct, 0));
-  const segs = [...top, { name: "Other", pct: other, color: C.mute }];
+  let segs;
+  if (LANG_FOCUS.length) {
+    // Focus list: share of repos among the chosen languages, labelled by repo count.
+    const top = LANG_FOCUS.map((n) => s.langs.find((l) => l.name.toLowerCase() === n.toLowerCase())).filter(Boolean).slice(0, 6);
+    const total = top.reduce((a, l) => a + l.repos, 0) || 1;
+    segs = top.map((l) => ({ ...l, pct: (l.repos / total) * 100, caption: `${l.name} · ${l.repos} repo${l.repos > 1 ? "s" : ""}` }));
+  } else {
+    const top = s.langs.slice(0, 5);
+    const other = Math.max(0, 100 - top.reduce((a, l) => a + l.pct, 0));
+    segs = [...top, { name: "Other", pct: other, color: C.mute }];
+  }
   const bx = 160, bw = 808;
   let acc = 0;
   parts.push(`<clipPath id="lb"><rect x="${bx}" y="${ly + 26}" width="${bw}" height="8" rx="4"/></clipPath><g clip-path="url(#lb)">`);
@@ -189,7 +202,7 @@ function activityCard(s) {
   let lx = bx;
   for (const l of segs) {
     parts.push(`<circle cx="${lx + 4}" cy="${ly + 58}" r="4" fill="${l.color}"/>`);
-    const t = `${l.name} ${l.pct.toFixed(1)}%`;
+    const t = l.caption || `${l.name} ${l.pct.toFixed(1)}%`;
     parts.push(text(lx + 14, ly + 62, esc(t), { size: 11.5, fill: C.text }));
     lx += 14 + t.length * 7.2 + 20;
   }
@@ -321,9 +334,10 @@ const [repos, yearData] = await Promise.all([
 const own = repos.filter((r) => !r.isFork && !EXCLUDE.has(r.name.toLowerCase()));
 const langScore = new Map();
 for (const r of own) for (const e of r.languages.edges) {
-  const cur = langScore.get(e.node.name) || { name: e.node.name, color: e.node.color || C.text, size: 0 };
+  const cur = langScore.get(e.node.name) || { name: e.node.name, color: e.node.color || C.text, size: 0, repos: 0 };
   // sqrt damps repos with huge generated/vendored files.
   cur.size += Math.sqrt(e.size);
+  cur.repos++;
   langScore.set(e.node.name, cur);
 }
 const langTotal = [...langScore.values()].reduce((a, l) => a + l.size, 0) || 1;
@@ -352,7 +366,7 @@ for (const d of days) wd[new Date(d.date + "T00:00:00Z").getUTCDay()] += d.contr
 
 const extraCommits = repos.reduce((a, r) => a + r.extraCommits, 0);
 const stats = {
-  createdAt: user.createdAt,
+  createdAt: MEMBER_SINCE ? `${MEMBER_SINCE}-01`.slice(0, 10) + "T00:00:00Z" : user.createdAt,
   totalContrib: Object.values(perYear).reduce((a, b) => a + b, 0) + extraCommits,
   // Private contributions are only exposed as an aggregate; count them with commits.
   commits: sum("totalCommitContributions") + sum("restrictedContributionsCount") + extraCommits,
