@@ -2,8 +2,8 @@ name: Update profile stats
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # every 6 hours
-  workflow_dispatch:          # manual run
+    - cron: "0 */6 * * *"
+  workflow_dispatch:
 
 permissions:
   contents: write
@@ -25,8 +25,6 @@ jobs:
         with:
           node-version: 20
 
-      # STATS_TOKEN (classic PAT, read-only scopes) is needed to count private repos and
-      # languages; without it the step is skipped so the committed cards are not downgraded.
       - name: Generate stat cards
         if: env.STATS_TOKEN != ''
         run: node scripts/stats.mjs
