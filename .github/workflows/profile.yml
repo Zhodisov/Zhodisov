@@ -35,6 +35,7 @@ jobs:
           HIDE_PROJECTS: NEW-SAFEMARKET-JSON,SafeMarket-Update,DisneyClient-Menu,SafeMarket-Server,profile-readme-test,SAFEMARKETV2-ENDPOINTDISCORD,PUBLIC,dbs,db,DisneyClient-Parser,Discord-IPGrabber,portfoliotheo
           PROJECTS_COUNT: 8
           PIN_PROJECTS: Lushvae-private
+          LANG_OVERRIDE: Lushvae-private=C++
           EXTRA_EMAILS: ${{ secrets.EXTRA_EMAILS }}
           LANG_FOCUS: C++,Rust,C,Go,Kotlin,ActionScript,Lua,Java,Smali
           MEMBER_SINCE: 2019-06
