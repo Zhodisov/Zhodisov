@@ -36,6 +36,7 @@ jobs:
           PROJECTS_COUNT: 8
           PIN_PROJECTS: Lushvae-private
           LANG_OVERRIDE: Lushvae-private=C++
+          COMMIT_OVERRIDE: Lisyum=6148
           EXTRA_EMAILS: ${{ secrets.EXTRA_EMAILS }}
           LANG_FOCUS: C++,Rust,C,Go,Kotlin,ActionScript,Lua,Java,Smali
           MEMBER_SINCE: 2019-06
